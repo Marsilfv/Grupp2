@@ -465,10 +465,10 @@ article#article.show .info .date-author {
 }
 
 /*Articles SASS file*/
-.content-page-wrapper {
-  color: red;
-}
-
 .about-us-wrapper {
-  color: teal;
+  min-width: 90vh;
+  height: 100vh;
+  color: white;
+  background-color: teal;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=about.css.map */
