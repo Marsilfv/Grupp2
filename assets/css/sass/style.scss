@@ -3,7 +3,7 @@ Name: Google News SASS
 Version: 1.0
 */
 
-@import "colors.scss"; /*Colors SASS file*/ 
+@import "colors.scss"; /*Colors SASS file*/
 @import "mixin.scss"; /*Mixin SASS file*/
 @import "fonts.scss"; /*Fonts SASS file*/
 @import "header.scss"; /*Header SASS file*/
@@ -16,38 +16,38 @@ body {
   clear: both;
   padding: 1%;
   box-sizing: border-box;
-	font-family:$primary-font;
-	font-size:13pt;
-	color:black;
+  font-family: $primary-font;
+  font-size: 13pt;
+  color: black;
 }
 
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
+  /*All Devices*/
 
-	/*All Devices*/
+  html.touch *:hover {
+    pointer-events: none !important;
+  }
 
-	html.touch *:hover {
-    	pointer-events: none !important;
-	}
+  html,
+  body {
+    width: 100% !important;
+    margin: 0px !important;
+    overflow-x: hidden !important;
+    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+  }
 
-	html, body {
-		width:100% !important;
-		margin:0px !important;
-		overflow-x:hidden !important;
-		-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
-	}
-
-	body {
-		margin: 0 0 20px;
-		height:auto;
-		min-height:100%;
-	}
+  body {
+    margin: 0 0 20px;
+    height: auto;
+    min-height: 100%;
+  }
 }
 
 #content {
   width: 80%;
   margin: 0 auto;
 
-  @media (max-width : 870px) {
+  @media (max-width: 870px) {
     width: 100%;
   }
 }
@@ -55,5 +55,10 @@ body {
 /*------FOOTER-----*/
 
 #footer {
-	width: 100%;
+  width: 100%;
+}
+
+.InActive {
+  pointer-events: none;
+  cursor: default;
 }
