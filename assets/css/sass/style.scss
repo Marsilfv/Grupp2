@@ -8,6 +8,7 @@ Version: 1.0
 @import "fonts.scss"; /*Fonts SASS file*/
 @import "header.scss"; /*Header SASS file*/
 @import "articles.scss"; /*Articles SASS file*/
+@import "global_pages.scss"; /*Articles SASS file*/
 
 body {
   width: 100%;
@@ -58,7 +59,10 @@ body {
   width: 100%;
 }
 
-.InActive {
-  pointer-events: none;
-  cursor: default;
+hr {
+  border-top: 3px solid #bbb;
+  width: 100vw;
+}
+a {
+  color: $primary-color;
 }

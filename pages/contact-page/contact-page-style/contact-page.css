@@ -64,7 +64,6 @@
 /* --- Convert percent font sizes to em ---*/
 html,
 .paragraph,
-#header nav#menu ul li.search input#searchInput,
 li,
 p {
   font-family: "Open Sans", sans-serif;
@@ -79,10 +78,8 @@ p {
 html strong,
 html b,
 .paragraph strong,
-#header nav#menu ul li.search input#searchInput strong,
 li strong,
 .paragraph b,
-#header nav#menu ul li.search input#searchInput b,
 li b,
 p strong,
 p b {
@@ -130,7 +127,9 @@ h2 {
 
 /*------LINKS-----*/
 a {
-  color: red;
+  font-weight: 600;
+  color: #2a5db0;
+  font-size: 19px;
   text-decoration: none;
   transition: 0.5s;
   /*Taken fomr mixin.scss*/
@@ -142,329 +141,161 @@ a:hover, a:active, a:visited {
 }
 
 /*Fonts SASS file*/
-/*! HEADER STYLES */
-#header {
-  margin: -2% -1% 0 -1%;
-  width: 102%;
-  height: 100px;
-  overflow: hidden;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  background: white;
-  /*Breakpoint for when menu can't fit the screen anymore*/
-  /*#header h1*/
-  /*Close nav#menu*/
+/*COLORS*/
+/*Colors SASS file*/
+/*! TYPOGRAPHY  */
+/* --- Convert percent font sizes to em ---*/
+html,
+.paragraph,
+li,
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: black;
 }
-@media screen and (max-width: 1190px) {
-  #header {
-    padding: 2%;
-    box-sizing: border-box;
-    height: auto;
-    position: relative;
-  }
-}
-#header #branding {
-  padding: 1%;
-  box-sizing: border-box;
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  /*Breakpoint for when menu can't fit the screen anymore*/
-  /*#bradning img*/
-}
-@media screen and (max-width: 1190px) {
-  #header #branding {
-    height: auto;
-    width: 20%;
-    max-width: 90px;
-  }
-  #header #branding img {
-    height: auto !important;
-    width: 100% !important;
-  }
-}
-#header #branding img {
-  height: 100%;
-  width: auto;
-  display: block;
-}
-#header h1 {
-  vertical-align: middle;
-  display: inline-block;
-}
-#header nav#menu {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-  text-align: right;
-  min-width: 60%;
-  /*Breakpoint for when menu can't fit the screen anymore*/
-  /*Close @media screen and (max-width: 1190px)*/
-  /*Close ul*/
-}
-@media screen and (max-width: 1190px) {
-  #header nav#menu {
-    min-width: auto;
-    max-height: 0px;
-    transition: 1s;
-    /*Taken fomr mixin.scss*/
-    /*Open menu*/
-  }
-  #header nav#menu li {
-    display: none !important;
-  }
-  #header nav#menu.responsive {
-    width: 100%;
-    max-height: 1000px;
-    transition: 1s;
-    /*Taken fomr mixin.scss*/
-  }
-  #header nav#menu.responsive li:not(:last-child) {
-    float: none;
-    display: block !important;
-    text-align: left;
-    padding: 1% 0;
-    border-top: 1px solid #CCC;
-  }
-}
-#header nav#menu ul {
-  display: block;
-  /*Close li*/
-}
-#header nav#menu ul li {
-  display: inline-block;
-  vertical-align: middle;
-  text-transform: uppercase;
+html strong,
+html b,
+.paragraph strong,
+li strong,
+.paragraph b,
+li b,
+p strong,
+p b {
   font-weight: bold;
-  margin: 0 1%;
-  /*Breakpoint for when menu can't fit the screen anymore*/
-  /*@media screen and (max-width: 1190px)*/
-}
-#header nav#menu ul li a.current {
-  color: #16315e;
-}
-#header nav#menu ul li.icon {
-  display: none;
-}
-#header nav#menu ul li.search input#searchInput {
-  background-image: url("../searchicon.png");
-  background-position: 4px 7px;
-  background-repeat: no-repeat;
-  width: 113px;
-  background-size: 15px auto;
-  box-sizing: border-box;
-  padding: 5px 5px 5px 22px;
-  border: 1px solid #CCC;
-  margin-bottom: 12px;
-  box-shadow: 0 0 0 transparent;
-}
-#header nav#menu ul li.search input#searchInput:focus {
-  box-shadow: 0 0 5px #2a5db0;
-  transition: 0.3s;
-}
-@media screen and (max-width: 1190px) {
-  #header nav#menu ul li.icon {
-    float: right;
-    display: inline-block !important;
-    position: absolute;
-    right: 2%;
-    top: 30px;
-  }
-  #header nav#menu ul li.icon a {
-    font-size: 20px;
-  }
 }
 
-/*Close #header*/
-/*Header SASS file*/
-/*! ARTICLE STYLES */
-article#article {
-  overflow: hidden;
-  position: relative;
-  width: 31%;
-  float: left;
-  margin: 10px 1%;
-  max-height: 200px;
-  /*Breakpoints for responsive grid system*/
-  /*The first and largest article*/
-  /*Close .article-0*/
-  /*Styling of smallest articles in 'sidebar'*/
-  /*Close .info*/
-  /*Close .show*/
+strong,
+b {
+  font-weight: bold;
 }
-@media (min-width: 461px) and (max-width: 870px) {
-  article#article {
-    width: 48% !important;
-  }
+
+i,
+em {
+  font-style: italic;
 }
-@media (max-width: 460px) {
-  article#article {
-    width: 98% !important;
-    max-height: none;
-  }
+
+ul {
+  list-style-type: none;
+  list-style-image: none;
 }
-article#article.article-0 {
-  width: 64%;
-  max-height: none;
+
+li {
+  list-style-type: none;
+  list-style-image: none;
+  margin-top: 5px;
 }
-article#article.article-0 .info p {
-  color: white;
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
 }
-article#article.article-0 .description, article#article.article-0 .btn {
-  display: block !important;
-  /*Don't show buttons on most articles since it takes a lot of space*/
-}
-@media (max-width: 460px) {
-  article#article.article-0 .description, article#article.article-0 .btn {
-    display: none !important;
-  }
-}
-article#article.article-0 .author {
-  display: inline-block !important;
-}
-article#article.article-0 img {
-  height: 520px;
-  /*Make image shorter on mobile phones*/
-}
-@media (max-width: 460px) {
-  article#article.article-0 img {
-    max-height: 200px !important;
-  }
-}
-article#article.article-2, article#article.article-3, article#article.article-4 {
-  border-top: 1px solid #CCC;
-  padding-top: 10px;
-  margin-top: 0;
-  height: 86px;
-}
-article#article.article-2 .img-link, article#article.article-3 .img-link, article#article.article-4 .img-link {
-  float: left;
-  width: 40%;
-  display: block;
-  clear: none;
-}
-article#article.article-2 .img-link img, article#article.article-3 .img-link img, article#article.article-4 .img-link img {
-  height: 86px;
-}
-article#article.article-2 .info, article#article.article-3 .info, article#article.article-4 .info {
-  width: 60%;
-  float: left;
-  background: none;
-  position: relative;
-  clear: none;
-  padding: 0 0 0 3%;
-  height: 86px;
-}
-article#article.article-2 .info .date-author, article#article.article-3 .info .date-author, article#article.article-4 .info .date-author {
-  display: none;
-}
-article#article.article-2 .info h2, article#article.article-3 .info h2, article#article.article-4 .info h2 {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 16px;
-  line-height: 1rem;
-  font-weight: 700;
-}
-article#article.article-2 .info a, article#article.article-3 .info a, article#article.article-4 .info a {
-  color: black !important;
-}
-article#article img {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 200px;
-}
-article#article .info {
-  width: 100%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  bottom: 0;
-  clear: both;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 2%;
-  display: block;
-}
-article#article .info .date-author {
-  display: block;
-  margin-top: 0;
-  color: white;
-}
-article#article .info a {
-  color: white;
-}
-article#article .info .description, article#article .info .btn {
-  display: none;
-}
-article#article.hide {
-  opacity: 0;
-  position: absolute;
-}
-article#article.show {
-  opacity: 1;
-  display: block;
-  margin: 10px 1%;
-  border-top: none;
-  padding-top: 0;
-  height: auto;
-  opacity: 1;
-  transition: opacity 1s;
-  /*Taken fomr mixin.scss*/
-  /*Close .info*/
-}
-article#article.show a.img-link {
-  float: none !important;
-  width: 100% !important;
-  transition: none;
-}
-article#article.show a.img-link img {
-  height: 200px !important;
-  transition: none;
-}
-article#article.show .info {
-  width: 100%;
-  transition: none;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  clear: both;
-  padding: 0 2% 2% 2%;
-  float: none;
-  height: auto;
-}
-article#article.show .info h2 {
+
+h2 {
   font-family: "Playfair Display", serif;
   font-weight: normal;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 25px;
   line-height: 1.5625rem;
-  transition: none;
-}
-article#article.show .info a {
-  color: white !important;
-}
-article#article.show .info .date-author {
-  display: block !important;
 }
 
-/*Close #article*/
-#no-results {
-  display: none;
-  padding: 2% 0;
-}
-
-.weather-widget-io {
-  float: right !important;
-  width: 31% !important;
-  margin: 10px 2% 10px 0px !important;
-  height: 520px !important;
-  padding: 0px !important;
-  overflow: hidden !important;
-}
-
-/*Articles SASS file*/
-.content-page-wrapper {
+/*------LINKS-----*/
+a {
+  font-weight: 600;
   color: #2a5db0;
-}/*# sourceMappingURL=contact-page.css.map */
+  font-size: 19px;
+  text-decoration: none;
+  transition: 0.5s;
+  /*Taken fomr mixin.scss*/
+  cursor: pointer;
+}
+a:hover, a:active, a:visited {
+  color: #16315e;
+  text-decoration: none;
+}
+
+.brand {
+  padding: 20px;
+}
+.brand h1 {
+  margin: 0;
+}
+.brand a {
+  display: inline-block;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#searchInput {
+  height: 20px;
+  width: 150px;
+}
+
+.icon {
+  display: none;
+}
+
+.top-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1190px) {
+  .icon {
+    display: block;
+  }
+  .icon a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  nav.responsive {
+    height: 0px;
+    overflow: hidden;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul li {
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  ul li a.current {
+    color: #16315e;
+  }
+  ul li.icon {
+    float: right;
+    display: inline-block !important;
+    position: absolute;
+    right: 2%;
+    top: 30px;
+  }
+}
+/*Header SASS file*/
+.footer {
+  width: 100vw;
+  height: 60px;
+}
+
+/*Articles SASS file*//*# sourceMappingURL=contact-page.css.map */

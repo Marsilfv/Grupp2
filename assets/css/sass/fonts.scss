@@ -77,7 +77,9 @@ h2 {
 /*------LINKS-----*/
 
 a {
-  color: red;
+  font-weight: 600;
+  color: #2a5db0;
+  font-size: 19px;
   text-decoration: none;
   @include transition(0.5s); /*Taken fomr mixin.scss*/
   cursor: pointer;

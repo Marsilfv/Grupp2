@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <link rel="stylesheet" href="./contact-page-style/contact-page.css" type="text/css">
-    <title>contact</title>
-</head>
-<body>
-    <div class="content-page-wrapper">Contact Page</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./contact-page-style/contact-page.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/sass/global_pages.css"
+      type="text/css"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <section role="main" id="content-page-wrapper">
+      <header id="header" class="header">
+        <div class="top-nav-container">
+          <div class="brand">
+            <a href="../../index.html"><h1>Google News</h1></a>
+          </div>
+          <div class="icon">
+            <a href="javascript:void(0);" onclick="menuFunction()">&#9776;</a>
+          </div>
+        </div>
+        <nav id="menu" class="menu">
+          <ul>
+            <li>
+              <!--   javascript:void(0) is for not being directed to the ahref, returns nothing    -->
+              <a href="javascript:void(0)" class="InActive">What we do</a>
+            </li>
+            <li>
+              <a href="../about-us/about.html">Who we are</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="InActive">Customers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="InActive">Career</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="InActive">IR</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" class="current" class="InActive"
+                >Latest</a
+              >
+            </li>
+            <li>
+              <a href="../contact-page/contact-page.html">Contact</a>
+            </li>
+            <li class="search">
+              <input
+                type="text"
+                id="searchInput"
+                onkeyup="searchFunction()"
+                placeholder="Search titles"
+                title="Type in title search term"
+              />
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <section class="hero-img">
+      <p>Ayya here</p>
+    </section>
+    <section class="contact-info">
+      <p>Ayya</p>
+    </section>
+    <section class="googleMaps">
+      <p>Martin here</p>
+    </section>
+    <section class="team">
+      <p>Emma here</p>
+    </section>
+
+    <footer class="footer">Daniel Here</footer>
+    <!--Wather widget-->
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
+    <!--JS Scripts-->
+    <script type="text/javascript" src="../../assets/js/menu.js"></script>
+    <!--Mobile menu JS-->
+    <script type="text/javascript" src="../../assets/js/request.js"></script>
+    <!--JSON API request JS-->
+  </body>
 </html>

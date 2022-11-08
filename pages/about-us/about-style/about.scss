@@ -2,12 +2,11 @@
 @import "../../../assets/css/sass/mixin.scss"; /*Mixin SASS file*/
 @import "../../../assets/css/sass/fonts.scss"; /*Fonts SASS file*/
 @import "../../../assets/css/sass/header.scss"; /*Header SASS file*/
-@import "../../../assets/css/sass/articles.scss"; /*Articles SASS file*/
 
-.about-us-wrapper {
-  min-width: 90vh;
-  height: 100vh;
-  color: white;
-  background-color: teal;
-  margin-bottom: 100px;
+@import "../../../assets/css/sass/footer.scss"; /*Articles SASS file*/
+
+.statistics {
+}
+
+.story {
 }
