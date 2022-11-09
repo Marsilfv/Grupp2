@@ -15,15 +15,18 @@ Version: 1.0
 }
 @keyframes moveUp {
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
 }
 /*Moving up fade in animation*/
 .moveUp {
-  opacity: 0; /*Taken from mixin.scss*/
+  opacity: 0;
+  -webkit-transform: translateY(200px); /*Taken from mixin.scss*/
   transform: translateY(200px); /*Taken from mixin.scss*/
-  -moz-transform: translateY(200px); /*Taken from mixin.scss*/ /*Taken from mixin.scss*/
+  -moz-transform: translateY(200px); /*Taken from mixin.scss*/
+  -moz-animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
   -webkit-animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
   animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
 }
@@ -41,6 +44,10 @@ Version: 1.0
   background: #2a5db0;
   font-weight: bold;
   color: white !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   /*Taken from mixin.scss*/
 }
@@ -55,6 +62,8 @@ Version: 1.0
   font-size: 125%;
   line-height: 2;
   color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
   transition: all 0.3s;
   right: -20px;
   top: 0;
@@ -137,6 +146,10 @@ a {
   color: #2a5db0;
   font-size: 19px;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   /*Taken fomr mixin.scss*/
   cursor: pointer;
@@ -220,6 +233,10 @@ a {
   color: #2a5db0;
   font-size: 19px;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   /*Taken fomr mixin.scss*/
   cursor: pointer;
@@ -394,8 +411,7 @@ article#article img {
   display: block;
   overflow: hidden;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 200px;
 }
 article#article .info {
@@ -433,6 +449,10 @@ article#article.show {
   padding-top: 0;
   height: auto;
   opacity: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
   transition: opacity 1s;
   /*Taken fomr mixin.scss*/
   /*Close .info*/
@@ -559,6 +579,10 @@ a {
   color: #2a5db0;
   font-size: 19px;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   /*Taken fomr mixin.scss*/
   cursor: pointer;
@@ -622,4 +646,6 @@ hr {
 
 a {
   color: #2a5db0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
