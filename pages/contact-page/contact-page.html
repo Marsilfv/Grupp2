@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="./contact-page-style/contact-page.css"
-      type="text/css"
-    />
+    rel="stylesheet"
+    href="../../assets/css/style.css"
+    type="text/css"
+  />
     <link
       rel="stylesheet"
       href="../../assets/css/sass/global_pages.css"
@@ -73,13 +73,44 @@
       <p>Ayya</p>
     </section>
     <section class="googleMaps">
-      <p>Martin here</p>
+      <div class="mapouter" style="padding-top: 50px"><div class="gmap_canvas">
+        <iframe src="https://maps.google.com/maps?q=google%20sverige&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+        id="gmap_canvas" frameborder="0" scrolling="no" style="width: 80%; height: 200px;"></iframe>
+        <a href="https://blooket.app/join" style="display:none">blooket join</a>
+        <style>.mapouter{position:relative;text-align:center;height:200px;width:100%;}</style>
+        <style>.gmap_canvas{overflow:hidden;background:none!important;height:200px;width:100%;}</style>
+        </div>
+    </div>
     </section>
     <section class="team">
       <p>Emma here</p>
     </section>
-
-    <footer class="footer">Daniel Here</footer>
+<!--Footer-->
+    <footer class="footer">  <section>
+      <h2 class="footer__headline">About us</h2>
+      <ul class="footer__list">
+        <li>What we do</li>
+        <li>Who we are</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="footer__headline">About you</h2>
+      <ul class="footer__list">
+        <li>Customers </li>
+        <li>Latest</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="footer__headline">Adress</h2>
+      <ul class="footer__list">
+        <li>Google street 2,<br>
+          526 42 Googleville</li>
+      </ul>
+    </section>
+    <section class="copyRight">
+      <h2 class="footer__headline">Copyright 2022 Google News</h2>
+    </section>
+    </footer>
     <!--Wather widget-->
     <script>
       !(function (d, s, id) {

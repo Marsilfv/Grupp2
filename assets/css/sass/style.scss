@@ -9,6 +9,9 @@ Version: 1.0
 @import "header.scss"; /*Header SASS file*/
 @import "articles.scss"; /*Articles SASS file*/
 @import "global_pages.scss"; /*Articles SASS file*/
+@import "about.scss";
+@import "contact.scss";
+@import "footer.scss";
 
 body {
   width: 100%;
