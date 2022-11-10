@@ -1,6 +1,19 @@
 .contact-info {
 }
 .googleMaps {
-    width: 90vw;
-    
+    padding-top: 50px;    
+}
+
+.mapouter{
+    position: relative;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+.gmap_canvas{
+    overflow: hidden;
+    background:none!important;
+    height:200px;
+    width:100%;
 }
