@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -7,7 +7,7 @@ footer {
   font-weight: bold;
   font-family: 'arial';
   font-size: 14px;
-  
+
 }
 .footer__list {
   font-family: 'arial';
@@ -24,7 +24,7 @@ footer {
 }
 @media(max-width: 500px){
 
-  footer{
+  .footer{
     flex-direction:column;
   }
 }
