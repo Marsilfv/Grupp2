@@ -1,4 +1,26 @@
-.footer {
-  width: 100vw;
-  height: 60px;
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer__headline {
+  font-weight: bold;
+  font-family: 'arial';
+  font-size: 14px;
+
+}
+.footer__list {
+  font-family: 'arial';
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.copyRight{
+  margin-top: 58px;
+}
+@media(max-width: 500px){
+
+  footer{
+    flex-direction:column;
+  }
 }
