@@ -692,6 +692,37 @@ a:hover, a:active, a:visited {
   margin-top: 58px;
 }
 
+.arrow-container {
+  border: none;
+  background: transparent;
+  display: inline-block;
+  position: relative;
+  color: #2a5db0;
+  cursor: pointer;
+}
+.arrow-container img {
+  width: auto;
+  height: 40px;
+}
+
+.arrow-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2a5db0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.arrow-container:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 @media (max-width: 500px) {
   .footer {
     flex-direction: column;
