@@ -1,0 +1,17 @@
+.story-container {
+  margin: 150px 100px;
+}
+
+@media (max-width: 500px) {
+  .story-container {
+    margin: 40px 40px;
+  }
+}
+@media (max-width: 1233px) {
+  img {
+    width: 100%;
+  }
+}
+.h2 {
+  font-weight: bold;
+}/*# sourceMappingURL=about.css.map */

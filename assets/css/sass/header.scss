@@ -27,6 +27,20 @@ ul {
   display: none;
 }
 
+.header {
+  position: fixed;
+  background: $white;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  
+  &.inverted {
+    background-color: $white;
+  }
+}
+.menu {
+  background-color: white;
+}
 .top-nav-container {
   display: flex;
   justify-content: space-between;
