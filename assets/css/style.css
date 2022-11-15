@@ -750,6 +750,18 @@ a:hover, a:active, a:visited {
     gap: 30px;
   }
 }
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: black;
+  list-style: none;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
