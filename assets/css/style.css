@@ -688,6 +688,8 @@ a:hover, a:active, a:visited {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 50px;
+  margin-left: 40px;
 }
 
 .footer__headline {
@@ -745,7 +747,7 @@ a:hover, a:active, a:visited {
 @media (max-width: 500px) {
   .footer {
     flex-direction: column;
-    margin-left: 40px;
+    gap: 30px;
   }
 }
 body {
