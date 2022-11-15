@@ -2,7 +2,61 @@
 @import "fonts.scss"; /*Fonts SASS file*/
 
 .hero-img {
+  margin-top: 120px;
+  width:100%;
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
 }
 
 .team {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.the-team{
+  margin-left: 170px;
+  margin-top: 50px;
+}
+
+/* First the Grid /
+
+/ The Images /
+
+.gallery-grid {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/ The Picture Frame */
+
+.gallery-frame {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  text-align: left;
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-img:hover {
+  opacity: 0.7;
 }

@@ -1,6 +1,38 @@
-.contact-info {
-}
 .googleMaps {
-    width: 90vw;
-    
+    padding-top: 50px;    
+}
+
+.mapouter{
+    position: relative;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+#gmap_canvas{
+    overflow: hidden;
+    background:none!important;
+    height:200px !important;
+    width: 90% !important;
+}
+.contact-container{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 180px;
+    text-align: left;
+    margin-top: 30px;
+}
+.contact-info {
+   margin: 90px;
+}
+.contact-icon{
+    display:flex;
+    flex-direction: row;
+    width: 100px;
+   
+
+    #tumblr, #facebook, #linkedin {
+        width:30px;
+    }
 }
