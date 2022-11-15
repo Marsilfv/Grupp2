@@ -16,10 +16,10 @@
     width:100%;
 }
 .contact-container{
-display: flex;
+    display: flex;
+    align-content: center;
     flex-wrap: wrap;
-    gap: 140px;
-    margin-left: 60px;
+    gap: 100px;
     text-align: left;
     margin-top: 30px;
 }
@@ -30,7 +30,7 @@ display: flex;
     display:flex;
     flex-direction: row;
     width: 100px;
-    align-items: flex-end;
+   
 
     #tumblr, #facebook, #linkedin {
         width:50px;
