@@ -15,3 +15,24 @@
     height:200px;
     width:100%;
 }
+.contact-container{
+display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    margin-left: 60px;
+    text-align: left;
+    margin-top: 30px;
+}
+.contact-info {
+    margin-left: 100px;
+}
+.contact-icon{
+    display:flex;
+    flex-direction: row;
+    width: 100px;
+    align-items: flex-end;
+
+    #tumblr, #facebook, #linkedin {
+        width:50px;
+    }
+}
