@@ -133,7 +133,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-weight: normal;
+  font-weight: semibold;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 25px;
@@ -220,7 +220,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-weight: normal;
+  font-weight: semibold;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 25px;
@@ -581,7 +581,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-weight: normal;
+  font-weight: semibold;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 25px;
@@ -628,7 +628,7 @@ a:hover, a:active, a:visited {
 
 / The Picture Frame */
 .gallery-frame {
-  padding: 0.5rem;
+  padding: 0.3rem;
   font-size: 1.2rem;
   text-align: left;
   width: 200px;
