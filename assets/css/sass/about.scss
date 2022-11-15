@@ -1,4 +1,12 @@
 .statistics {
+        .stat-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 140px;
+            margin-left: 60px;
+            text-align: left;
+            margin-top: 30px;
+        }
 }
 
 .story-container {
@@ -26,3 +34,18 @@
     font-weight: bold;
     
 }
+
+@media (max-width: 500px) {
+    .stat-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-left: 45px;
+        text-align: left;
+    }
+    }
+    @media (max-width: 892px) {
+        .stat-container {
+            gap: 50px;
+        }
+        }
