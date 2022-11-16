@@ -11,6 +11,10 @@
     object-position: bottom;
   }
 }
+.teams {
+  padding-bottom: 90px;;
+  border-bottom: 1px solid #ccc;  
+}
 
 .team {
  display: flex;
@@ -21,8 +25,14 @@
 }
 
 .the-team{
-  margin-left: 170px;
+  margin-left: 55px;
   margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .the-team {
+    text-align: center !important;
+  }
 }
 
 /* First the Grid /

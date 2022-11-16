@@ -1,75 +1,77 @@
 .statistics {
-        .stat-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 190px;
-            margin: 150px 100px;
-            text-align: left;
-        }
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0;
+  .stat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 90px 55px;
+    margin-top: 35px;
+    text-align: left;
+  }
+}
+
+.story {
+    border-bottom: 1px solid #ccc;
 }
 
 @media (max-width: 553px) {
-    .statistics {
-        .stat-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 50px;
-            margin: 100px 50px;
-            text-align: left;
-        }
-}
+  .statistics {
+    .stat-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    //   gap: 50px;
+      margin: 100px 50px;
+      text-align: left;
+    }
+  }
 }
 @media (max-width: 1059px) {
-    .statistics {
-        .stat-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 70px;
-            margin: 100px 50px;
-            text-align: left;
-        }
+  .statistics {
+    .stat-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    //   gap: 70px;
+      margin: 100px 50px;
+      text-align: left;
+    }
+  }
 }
-
-}
-
 
 .story-container {
-    margin: 150px 100px;
+  margin: 90px 55px;
 }
 
 @media (max-width: 500px) {
-    
-    .story-container {
-
-        margin: 40px 40px;
-    }
-}    
-
+  .story-container {
+    margin: 40px 40px;
+  }
+}
 
 @media (max-width: 1233px) {
-    img {
+  img {
     width: 100%;
-     }
-    }
-
+  }
+}
 
 .h2 {
-
-    font-weight: bold;
-    
+  font-weight: bold;
 }
 
 @media (max-width: 500px) {
-    .stat-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        margin-left: 45px;
-        text-align: left;
-    }
-    }
-    @media (max-width: 892px) {
-        .stat-container {
-            gap: 50px;
-        }
-        }
+  .stat-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 45px;
+    text-align: left;
+  }
+}
+// @media (max-width: 892px) {
+//   .stat-container {
+//     gap: 10px;
+//   }
+// }

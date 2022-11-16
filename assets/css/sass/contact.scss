@@ -1,5 +1,7 @@
 .googleMaps {
-    padding-top: 50px;    
+    padding-top: 50px;  
+    padding-bottom: 100px;;
+    border-bottom: 1px solid #ccc;  
 }
 
 .mapouter{
@@ -19,17 +21,23 @@
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    gap: 180px;
+    gap: 30px;
+    justify-content: space-between;
     text-align: left;
     margin-top: 30px;
 }
 .contact-info {
-   margin: 90px;
+   margin: 60px;
+   padding-bottom: 30px;;  
+   h1 {
+    margin-left: -10px;
+   }
 }
 .contact-icon{
     display:flex;
     flex-direction: row;
     width: 100px;
+    gap:5px;
    
 
     #tumblr, #facebook, #linkedin {
