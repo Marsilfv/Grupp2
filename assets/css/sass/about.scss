@@ -1,3 +1,5 @@
+@import "fonts.scss"; /*Fonts SASS file*/
+
 .statistics {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0;
@@ -9,6 +11,11 @@
     margin: 90px 55px;
     margin-top: 35px;
     text-align: left;
+  }
+}
+.stat-container {
+  h2 {
+    font-weight: 400;
   }
 }
 
@@ -43,6 +50,9 @@
 
 .story-container {
   margin: 90px 55px;
+  .h2 {
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 500px) {
@@ -57,9 +67,6 @@
   }
 }
 
-.h2 {
-  font-weight: bold;
-}
 
 @media (max-width: 500px) {
   .stat-container {

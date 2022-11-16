@@ -1,6 +1,7 @@
+@import "fonts.scss"; /*Fonts SASS file*/
 .googleMaps {
     padding-top: 50px;  
-    padding-bottom: 100px;;
+    padding-bottom: 80px;
     border-bottom: 1px solid #ccc;  
 }
 
@@ -25,19 +26,25 @@
     justify-content: space-between;
     text-align: left;
     margin-top: 30px;
+    .p-header {
+        font-weight: 700;
+        font-family: $secondary-font;
+    }
 }
 .contact-info {
    margin: 60px;
    padding-bottom: 30px;;  
    h1 {
     margin-left: -10px;
+    font-weight: 400;
+    font-family: $primary-font;
    }
 }
 .contact-icon{
     display:flex;
     flex-direction: row;
     width: 100px;
-    gap:5px;
+    gap:12px;
    
 
     #tumblr, #facebook, #linkedin {
