@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./assets/css/reset.css" type="text/css"> -->
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-    
-  
   </head>
   <body>
     <section role="main" id="wrapper">
@@ -55,17 +53,46 @@
           
         </nav>
       </header>
-     
+    
+      <!--All the Articles-->
       <section id="content"></content>
-
-      <footer>
         <!--Wather widget-->
         <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
         <!--JS Scripts-->
+        <script type="text/javascript" src="../../assets/js/scrollToTop.js"></script>
         <script type="text/javascript" src="./assets/js/menu.js"></script> <!--Mobile menu JS-->
         <script type="text/javascript" src="./assets/js/request.js"></script> <!--JSON API request JS-->
         <script type="text/javascript" src="./assets/js/headerColorChange.js"></script>
+      </section>
+
+     <!--Footer-->
+      <footer class="footer footerindexpage"> <section>
+        <h2 class="footer__headline">About us</h2>
+        <ul class="footer__list">
+          <li>What we do</li>
+            <a href="../about-us/about.html">Who we are</a>
+        </ul>
+      </section>
+      <section>
+        <h2 class="footer__headline">About you</h2>
+        <ul class="footer__list">
+          <li>Customers </li>
+          <li>Latest</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="footer__headline">Adress</h2>
+        <ul class="footer__list">
+          <li>Google street 2,<br>
+            526 42 Googleville</li>
+        </ul>
+      </section>
+      <section class="copyRight">
+        <h2 class="footer__headline">Copyright 2022 Google News</h2>
+      </section>
+      <button class="arrow-container">
+        <img src ="./assets/arrow-up-solid.svg" onclick="(scrollToTop())">
+      </button>
       </footer>
-    </section>
   </body>
 </html>

@@ -1076,7 +1076,22 @@ a:hover, a:active, a:visited {
 }
 .footer__list li {
   font-weight: 400;
+  list-style: none;
   text-transform: lowercase !important;
+}
+
+.footer__list a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 15px !important;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: black;
+  list-style: none;
+  cursor: pointer;
+  margin: 0;
 }
 
 .footer__list li::first-letter {
@@ -1160,6 +1175,7 @@ body {
     width: 100% !important;
     margin: 0px !important;
     overflow-x: hidden !important;
+    overflow-y: auto;
     -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
   }
   body {
@@ -1179,8 +1195,23 @@ body {
 }
 
 /*------FOOTER-----*/
-#footer {
+.footerindexpage {
   width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer__list a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 0px;
+  font-size: 15px !important;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: black;
+  list-style: none;
+  cursor: pointer;
 }
 
 hr {
