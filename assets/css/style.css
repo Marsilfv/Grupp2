@@ -611,7 +611,7 @@ a:hover, a:active, a:visited {
 /*Shared style/classes on both pages*/
 .hero-img {
   margin-top: 130px;
-  width: 100%;
+  width: 120%;
   margin-left: -65px;
 }
 .hero-img img {
@@ -630,12 +630,14 @@ a:hover, a:active, a:visited {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .the-team {
-  margin-left: 55px;
+  margin-left: 50px;
   margin-top: 50px;
 }
 .the-team h2 {
@@ -644,6 +646,7 @@ a:hover, a:active, a:visited {
 
 @media (max-width: 900px) {
   .the-team {
+    margin-left: 0px;
     text-align: center !important;
   }
 }
@@ -654,9 +657,18 @@ a:hover, a:active, a:visited {
   padding: 0.3rem;
   font-size: 1.2rem;
   text-align: left;
-  width: 200px;
-  height: auto;
+  width: 180px;
+  height: 300px;
   display: inline-block;
+  margin: 10px;
+  padding-bottom: 100px;
+  border-radius: 10px;
+}
+.gallery-frame h2 {
+  margin-bottom: 5px;
+}
+.gallery-frame p {
+  margin-top: 5px;
 }
 
 .gallery-img {
@@ -924,7 +936,7 @@ a:hover, a:active, a:visited {
   overflow: hidden;
   background: none !important;
   height: 200px !important;
-  width: 90% !important;
+  width: 92% !important;
 }
 
 .contact-container {
@@ -1048,10 +1060,10 @@ a:hover, a:active, a:visited {
 /*Fonts SASS file*/
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 50px;
-  margin-left: 40px;
+  gap: 40px;
+  margin-left: 52px;
   margin-top: 30px;
   margin-bottom: 42px;
   font-family: "Open Sans", sans-serif;
@@ -1104,7 +1116,7 @@ a:hover, a:active, a:visited {
 
 .arrow-container {
   border: none;
-  margin-right: 36px;
+  margin-right: 60px;
   background: transparent;
   display: inline-block;
   position: relative;
@@ -1134,12 +1146,6 @@ a:hover, a:active, a:visited {
   transform-origin: bottom left;
 }
 
-@media (max-width: 500px) {
-  .footer {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
 .footer__list a {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -1153,6 +1159,12 @@ a:hover, a:active, a:visited {
   cursor: pointer;
 }
 
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 body {
   width: 100%;
   overflow-x: hidden;
